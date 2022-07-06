@@ -347,4 +347,24 @@
 
 .illyaFreakOut{
     margin-top: 54rem;
+
+}/* Gameplay
+   ========================================================================== */
+
+#gameplay section{
+    padding: 2rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#gameplay img{
+    width: 50%;
+}
+
+#gameplay a{
+    justify-content: flex-end;
+}
+
+body *{
+    border: 3px solid white;
 }
