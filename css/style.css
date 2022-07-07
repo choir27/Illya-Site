@@ -90,6 +90,7 @@
    .justifyContent{
     justify-content: center;
    }
+
    .alignItems{
     align-items: center;
    }
@@ -278,6 +279,15 @@
 /* About Section
    ========================================================================== */
 
+.about{
+    background: url('assets/about/flower-background.png'), radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+	background: url('assets/about/flower-background.png'), -webkit-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+	background: url('assets/about/flower-background.png'), -moz-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+    background-size: 100%, cover;
+    background-repeat: repeat-y, no-repeat;
+    background-position: center, center;
+}
+
    #about{
     padding: 6rem;
    }
@@ -351,20 +361,52 @@
 }/* Gameplay
    ========================================================================== */
 
+.gameplay{
+    background: no-repeat url('assets/gameplay/blue-flower.png') center/cover;
+}
+
+.gameplay-reverse{
+    background: no-repeat url('assets/gameplay/blue-flower-reverse.png') center/cover;
+
+}
+
 #gameplay section{
-    padding: 2rem;
+    padding: 4rem;
     width: 100%;
     justify-content: space-around;
 }
 
-#gameplay img{
+#gameplay a img{
+    width: 100%;
+}
+
+#gameplay a, #gameplay li, #gameplay h3{
+    color: white;
+}
+
+.image{
     width: 50%;
+    height: 100%;
 }
 
 #gameplay a{
-    justify-content: flex-end;
+    width: 100%;    
 }
 
-body *{
-    border: 3px solid white;
+#gameplay div, #gameplay ul{
+    padding: 2rem;
+}
+
+#gameplay h3{
+    margin-bottom: 2rem;
+}
+
+#gameplay div{
+    height: 85vh;
+    margin-bottom: 4rem;
+}
+
+#gameplay li{
+    line-height: 3rem;
+    font-size: 2rem;
 }
