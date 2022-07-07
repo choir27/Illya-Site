@@ -358,7 +358,10 @@
 .illyaFreakOut{
     margin-top: 54rem;
 
-}/* Gameplay
+}
+
+
+/* Gameplay
    ========================================================================== */
 
 .gameplay{
@@ -410,3 +413,35 @@
     line-height: 3rem;
     font-size: 2rem;
 }
+
+/* Drawings
+   ========================================================================== */
+
+/* Photos
+   ========================================================================== */
+
+.illya img{
+    width: 25%;
+}
+
+.photos .illya section{
+    justify-content: space-between;
+}
+
+.illya{
+    width: 100%;
+}
+
+.illya, .photos section section{
+padding: 2rem;
+}
+
+.photos .illya section.flex.justifyContent{
+    justify-content: center;
+}
+
+
+body *{
+    border: 3px solid black;
+}
+
