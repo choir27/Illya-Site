@@ -9,12 +9,6 @@ require('dotenv').config()
 let db = 'illyaContact'
 let dbName = 'illyaContact'
 
-MongoClient.connect(process.env.DATABASE_URL, { useUnifiedTopology: true })
-    .then(client => {
-
-        console.log(`Connected to ${dbName} Database`)
-        db = client.db(dbName)
-    })
     
 app.set('view engine', 'ejs')
 app.use(express.static('views'))
@@ -28,43 +22,28 @@ app.use(express.json())
 
 
 app.get('/',(request, response)=>{
-    db.collection('illyaContact').find().toArray()
-        .then(result => {
-            response.render('home.ejs', { info: result })
-        })
-        .catch(err=>console.error(err))
+    response.render('home.ejs')
+    .catch(err=>console.error(err))
 })
 
 app.get('/gameplay',(request, response)=>{
-    db.collection('illyaContact').find().toArray()
-        .then(result => {
-            response.render('gameplay.ejs', { info: result })
-        })
-        .catch(err=>console.error(err))
+    response.render('gameplay.ejs')
+    .catch(err=>console.error(err))
 })
 
 app.get('/about',(request, response)=>{
-    db.collection('illyaContact').find().toArray()
-        .then(result => {
-            response.render('about.ejs', { info: result })
-        })
+    response.render('about.ejs')
         .catch(err=>console.error(err))
 })
 
 app.get('/photos',(request, response)=>{
-    db.collection('illyaContact').find().toArray()
-        .then(result => {
-            response.render('photos.ejs', { info: result })
-        })
-        .catch(err=>console.error(err))
+response.render('photos.ejs')
+.catch(err=>console.error(err))
 })
 
 app.get('/contact',(request, response)=>{
-    db.collection('illyaContact').find().toArray()
-        .then(result => {
-            response.render('contact.ejs', { info: result })
-        })
-        .catch(err=>console.error(err))
+response.render('contact.ejs')
+.catch(err=>console.error(err))
 })
 
 app.listen(process.env.PORT || PORT, ()=>{  
