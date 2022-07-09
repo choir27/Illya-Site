@@ -1,12 +1,13 @@
-for(let i = 1;i<55;i++){
-    `${document.querySelector(`.jpg${i}`).addEventListener('click',enlargeImage)}`
+document.querySelector('#menu').addEventListener('click',showNav)
+
+function showNav(){
+   document.querySelector('.scroll').classList.remove('hidden')
+   document.querySelector('#menu').classList.add('hidden')
 }
 
+document.querySelector('#close').addEventListener('click',closeNav)
 
-function enlargeImage(){
-document.querySelector(`.${this.classList[0]}`).classList.toggle('large');
-
-}
-
-
-// `${document.querySelector(`.jpg${i}`).addEventListener('dblclick',shrinkImage)}`
+function closeNav(){
+    document.querySelector('.scroll').classList.add('hidden')
+    document.querySelector('#menu').classList.remove('hidden')
+ }

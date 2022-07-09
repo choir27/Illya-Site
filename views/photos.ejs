@@ -9,22 +9,21 @@
     <title>Illya Fansite - Gameplay</title>
   </head>
 
-  <body>
+  <body class = 'photos'>
+    <div class= 'flex menu row'><i id = 'menu' class="largeFont fa-solid fa-bars"></i></div>
+
     <div class = 'scroll flex hidden'>
         <ul class = 'flex column'>
-            <i class="largeFont fa-solid fa-xmark"></i>
+            <i id = 'close' class="largeFont fa-solid fa-xmark"></i>
         <% for(let i=1; i < 19; i++) {%>
       <li class = 'mediumFont'><a href = '#img<%=[i]%>'>Section1-<%=[i]%></a></li>
         <% } %>
-      </div>
-      <div class = 'scroll bar2 hidden'>
-        <ul class = 'flex column'>
-            <i class="largeFont fa-solid fa-xmark"></i> 
         <% for(let i=1; i < 6; i++) {%>
-        <li class = 'mediumFont'><a href = '#image<%=[i]%>'>Section2-<%=[i]%></a></li>
-        <% } %>
+          <li class = 'mediumFont'><a href = '#image<%=[i]%>'>Section2-<%=[i]%></a></li>
+          <% } %>
         </ul>
-    </div>
+      </div>
+ 
 
     <header>
         <h1 class = 'flex justifyContent largeFont'><a href = "/">Illya Fansite</a></h1>
@@ -41,9 +40,6 @@
   
   </header>
 <body class = 'photos'>
-
-
-    <div class= 'flex section2 row'><i class="largeFont fa-solid fa-bars"></i> <i class="image2 largeFont fa-solid fa-bars"></i></div>
 
     <section class ='flex alignItems column illya'>
 
