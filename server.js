@@ -6,8 +6,8 @@ const cors = require('cors')
 const fs = require('fs')
 require('dotenv').config()
 
-let db = 'illyaComments'
-let dbName = 'illyaComments'
+let db = 'illyaContact'
+let dbName = 'illyaContact'
 
 MongoClient.connect(process.env.DATABASE_URL, { useUnifiedTopology: true })
     .then(client => {
@@ -28,7 +28,7 @@ app.use(express.json())
 
 
 app.get('/',(request, response)=>{
-    db.collection('illyaComments').find().toArray()
+    db.collection('illyaContact').find().toArray()
         .then(result => {
             response.render('home.ejs', { info: result })
         })
@@ -36,7 +36,7 @@ app.get('/',(request, response)=>{
 })
 
 app.get('/gameplay',(request, response)=>{
-    db.collection('illyaComments').find().toArray()
+    db.collection('illyaContact').find().toArray()
         .then(result => {
             response.render('gameplay.ejs', { info: result })
         })
@@ -44,7 +44,7 @@ app.get('/gameplay',(request, response)=>{
 })
 
 app.get('/about',(request, response)=>{
-    db.collection('illyaComments').find().toArray()
+    db.collection('illyaContact').find().toArray()
         .then(result => {
             response.render('about.ejs', { info: result })
         })
@@ -52,9 +52,17 @@ app.get('/about',(request, response)=>{
 })
 
 app.get('/photos',(request, response)=>{
-    db.collection('illyaComments').find().toArray()
+    db.collection('illyaContact').find().toArray()
         .then(result => {
             response.render('photos.ejs', { info: result })
+        })
+        .catch(err=>console.error(err))
+})
+
+app.get('/contact',(request, response)=>{
+    db.collection('illyaContact').find().toArray()
+        .then(result => {
+            response.render('contact.ejs', { info: result })
         })
         .catch(err=>console.error(err))
 })

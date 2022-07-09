@@ -267,14 +267,20 @@
    }
 
    #footer nav{
-    width: 100%;
+    width: 30%;
     justify-content: flex-end;
    }
-
 
    #footer small, #footer nav{
     padding: .5rem;
    }
+
+   
+footer i{
+    font-size: 3rem;
+    color: white;
+}
+
 
 /* About Section
    ========================================================================== */
@@ -414,18 +420,43 @@
     font-size: 2rem;
 }
 
-/* Drawings
-   ========================================================================== */
-
 /* Photos
    ========================================================================== */
+.illya{
+    background:url('assets/photos/border.png'), url('assets/photos/border.png');;
+    background-repeat: repeat-y, repeat-y;
+    background-position: 0, 99% 0px;
+}
 
-.illya img{
-    width: 25%;
+.hidden{
+    display: none;
+}
+
+.photos h2{
+    color: white;
+}
+
+.photos a{
+    width: 15%;
+}
+
+.photos i{
+    color: white;
+}
+
+.section2{
+    padding: 3rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.photos img{
+    width: 100%;
 }
 
 .photos .illya section{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .illya{
@@ -440,3 +471,23 @@ padding: 2rem;
     justify-content: center;
 }
 
+
+.scroll li{
+    margin-bottom: 3rem;
+}
+
+.scroll{
+    background: ;
+    position: fixed;
+    overflow:scroll;
+    justify-content: flex-end;
+    width: 100%;
+    height: 82vh;
+}
+
+.bar2{
+align-items:  flex-end;
+overflow: auto;
+}
+/* Contact
+   ========================================================================== */

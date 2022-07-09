@@ -10,6 +10,22 @@
   </head>
 
   <body>
+    <div class = 'scroll flex hidden'>
+        <ul class = 'flex column'>
+            <i class="largeFont fa-solid fa-xmark"></i>
+        <% for(let i=1; i < 19; i++) {%>
+      <li class = 'mediumFont'><a href = '#img<%=[i]%>'>Section1-<%=[i]%></a></li>
+        <% } %>
+      </div>
+      <div class = 'scroll bar2 hidden'>
+        <ul class = 'flex column'>
+            <i class="largeFont fa-solid fa-xmark"></i> 
+        <% for(let i=1; i < 6; i++) {%>
+        <li class = 'mediumFont'><a href = '#image<%=[i]%>'>Section2-<%=[i]%></a></li>
+        <% } %>
+        </ul>
+    </div>
+
     <header>
         <h1 class = 'flex justifyContent largeFont'><a href = "/">Illya Fansite</a></h1>
           <!-- <h3 class = "date">07&ndash;20</h3> -->
@@ -19,164 +35,72 @@
             --><li><a class = 'regularFont' href = "/about">About</a></li><!--
             --><li><a class = 'regularFont' href = "/gameplay"> Gameplay</a></li><!--
             --><li><a class = 'regularFont' href = "/photos"> Photos</a></li><!--
-            --><li><a class = 'regularFont' href = "/drawings"> Drawings</a></li>
+            --><li><a class = 'regularFont' href =  "/contact">Contact</a></li>
           </ul>
           </nav>
   
   </header>
-
 <body class = 'photos'>
+
+
+    <div class= 'flex section2 row'><i class="largeFont fa-solid fa-bars"></i> <i class="image2 largeFont fa-solid fa-bars"></i></div>
+
     <section class ='flex alignItems column illya'>
 
-        <section class = 'flex justifyContent'>
-            <img src = '/photos/illya (66).jpg'>
-        </section>
+        <h2 class = 'mediumFont'>Click To View Full Image!</h2>
+        <% let index = 0; %> 
 
-        <section class = 'flex'>
-            <img src = '/photos/illya (44).jpg'>
-            <img src = '/photos/illya1.jpg'>
-            <img src = '/photos/illya1.png'>
-        </section>
+        <% for(let i=1; i < 19; i++) {%>
 
-        <section class = 'flex'>
-            <img src = '/photos/illya2.jpg'>
-            <img src = '/photos/illya3.jpg'>
-            <img src = '/photos/illya (67).jpg'>
-        </section>
+            <section class = 'flex' id = 'img<%=[i]%>'>
+                <% index+=1; %> 
+                <a target = '_blank' href = '/photos/<%= [index] %>.jpg'><img src = '/photos/<%= [index] %>.jpg' class = 'jpg<%= [index] %>'></a>
+                <% index+=1; %> 
+                <a target = '_blank' href = '/photos/<%= [index] %>.jpg'><img src = '/photos/<%= [index] %>.jpg' class = 'jpg<%= [index] %>'></a>
+                <% index+=1; %> 
+                <a target = '_blank' href = '/photos/<%= [index] %>.jpg'><img src = '/photos/<%= [index] %>.jpg' class = 'jpg<%= [index] %>'></a>
+            </section>
 
-        <section class = 'flex'>
-            <img src = '/photos/illya (65).jpg'>
-            <img src = '/photos/illya (64).jpg'>
-            <img src = '/photos/illya (62).jpg'>
-        </section>
+            <% } %>
 
-        <section class = 'flex'>
-            <img src = '/photos/illya (60).jpg'>
-            <img src = '/photos/illya (59).jpg'>
-            <img src = '/photos/illya (58).jpg'>
-        </section>
 
-        <section class = 'flex'>
-            <img src = '/photos/illya (52).jpg'>
-            <img src = '/photos/illya (57).jpg'>
-            <img src = '/photos/illya (61).jpg'>
-        </section>
-        
-        <section class = 'flex'>
-            <img src = '/photos/illya (51).jpg'>
-            <img src = '/photos/illya (54).jpg'>
-            <img src = '/photos/illya (53).jpg'>
-        </section>
+            <% let illya = 0; %> 
 
-        <section class = 'flex'>
-            <img src = '/photos/illya (50).jpg'>
-            <img src = '/photos/illya (49).jpg'>
-            <img src = '/photos/illya (46).jpg'>
-        </section>
+            <% for(let i=1; i < 6; i++) {%>
+    
+                <section class = 'flex' id = 'image<%=[i]%>'>
+                    <% illya+=1; %> 
+                    <a target = '_blank' href = '/photos/<%= [illya] %>.png'><img src = '/photos/<%= [illya] %>.png' class = 'png<%= [illya] %>'></a>
+                    <% illya+=1; %> 
+                    <a target = '_blank' href = '/photos/<%= [illya] %>.png'><img src = '/photos/<%= [illya] %>.png' class = 'png<%= [illya] %>'></a>
+                    <% illya+=1; %> 
+                    <a target = '_blank' href = '/photos/<%= [illya] %>.png'><img src = '/photos/<%= [illya] %>.png' class = 'png<%= [illya] %>'></a>
+                </section>
+    
+                <% } %>
 
-        <section class = 'flex'>
-            <img src = '/photos/illya (43).jpg'>
-            <img src = '/photos/illya (42).jpg'>
-            <img src = '/photos/illya (41).jpg'>
-        </section>
-        
-        <section class = 'flex'>
-            <img src = '/photos/illya (38).jpg'>
-            <img src = '/photos/illya (39).jpg'>
-            <img src = '/photos/illya (45).jpg'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (37).jpg'>
-            <img src = '/photos/illya (36).jpg'>
-            <img src = '/photos/illya (35).jpg'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (34).jpg'>
-            <img src = '/photos/illya (33).jpg'>
-            <img src = '/photos/illya (32).jpg'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (26).jpg'>
-            <img src = '/photos/illya (22).jpg'>
-            <img src = '/photos/illya (24).jpg'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (14).jpg'>
-            <img src = '/photos/illya (27).jpg'>
-            <img src = '/photos/illya1 (2).jpg'>
-        </section>
-        
-        <section class = 'flex'>
-            <img src = '/photos/illya (17).jpg'>
-            <img src = '/photos/illya (15).jpg'>
-            <img src = '/photos/illya (18).jpg'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (13).jpg'>
-            <img src = '/photos/illya (12).jpg'>
-            <img src = '/photos/illya (10).jpg'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (9).jpg'>
-            <img src = '/photos/illya (5).jpg'>
-            <img src = '/photos/illya (7).jpg'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (5).jpg'>
-            <img src = '/photos/illya (4).jpg'>
-            <img src = '/photos/illya (3).jpg'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (15).png'>
-            <img src = '/photos/illya (14).png'>
-            <img src = '/photos/illya (11).png'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (10).png'>
-            <img src = '/photos/illya (9).png'>
-            <img src = '/photos/illya (8).png'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (6).png'>
-            <img src = '/photos/illya (5).png'>
-            <img src = '/photos/illya (4).png'>
-        </section>
-
-        <section class = 'flex'>
-            <img src = '/photos/illya (7).png'>
-            <img src = '/photos/illya (12).png'>
-            <img src = '/photos/illya (3).png'>
-        </section>
-
-        <section class= 'flex'>
-            <img src = '/photos/illya (16).png'>
-            <img src = '/photos/illya (6).jpg'>
-            <img src = '/photos/illya (11).jpg'>
-        </section>
     </section>
 </body>
 
 <footer class = 'flex' id = 'footer'>
     <small class = 'flex justifyContent alignItems'>Illya Fansite &copy; choir</small>
+    <ul class = 'flex'>
+      <li><a href = 'https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248'><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href = 'https://www.linkedin.com/in/richard-choir/'><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href = 'https://www.instagram.com/225kh_drw/?hl=en'><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href = 'https://twitter.com/choir241'><i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
       <nav class= "flex">
           <ul class = 'flex'><!--
-        --><li><a class = 'smallFont' href = "/"> Home</a></li><!--
-        --><li><a class = 'smallFont' href = "/about">About</a></li><!--
-        --><li><a class = 'smallFont' href = "/gameplay"> Gameplay</a></li><!--
-        --><li><a class = 'smallFont' href = "/photos"> Photos</a></li><!--
-        --><li><a class = 'smallFont' href = "/drawings"> Drawings</a></li>
+          --><li><a class = 'smallFont' href = "/"> Home</a></li><!--
+          --><li><a class = 'smallFont' href = "/about">About</a></li><!--
+          --><li><a class = 'smallFont' href = "/gameplay"> Gameplay</a></li><!--
+          --><li><a class = 'smallFont' href = "/photos"> Photos</a></li><!--
+          --><li><a class = 'smallFont' href =  "/contact">Contact</a></li>
   </ul>
   </nav>
   </footer>
+  <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
+  <script src="/photos.js"></script>
   </body>
 </html>
