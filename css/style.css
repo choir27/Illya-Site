@@ -418,9 +418,7 @@ footer i{
     color: white;
 }
 
-.btn{
-    display: none;
-}
+
 
 .video:hover, button{
     cursor:pointer;
