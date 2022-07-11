@@ -129,7 +129,7 @@
 	background: url("assets/home/Heaven Background.png"), url('assets/home/Kalied Background.png'), -webkit-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
 	background: url("assets/home/Heaven Background.png"), url('assets/home/Kalied Background.png'), -moz-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
 	background-repeat: no-repeat, no-repeat;
-	background-position:  30px 290px, 1200px 330px, 0px 0px;
+	background-position:  1% 18%, 97% 20%, 0px 0px;
     background-size: 30%, 20%, 100%;
    }
 
@@ -581,3 +581,91 @@ form.contact{
     margin-top: -12rem;
 }
 
+
+
+/* Contact
+========================================================================== */
+
+
+@media all and (min-width: 3500px) and (max-width: 6200px){
+    body{
+        min-height: 10vh;
+    }
+
+    #one img{
+        width: 40%;
+    }
+
+    #two img{
+        width: 80%;
+    }
+
+    #two .summon{
+        width: 90%;
+    }
+
+ #gameplay section div{
+    height: 40%;
+ }
+
+    #gameplay .gameplay, #gameplay .gameplay-reverse{
+        flex-direction: row;
+    }
+
+    .home{
+        background-position:  1% 18%, 99% 20%, 0px 0px;
+    }
+
+    h2.mediumFont, h3.mediumFont, #about h4{
+        font-size: 9rem; 
+    }
+    
+    #gameplay ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #gameplay .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #gameplay li{
+        font-size: 6rem;
+        line-height: 10rem;
+    }
+
+    #about audio{
+        display: block;
+    }
+
+    form.contact{
+        min-height: 14vh;
+    }
+
+    h1.largeFont{
+        font-size: 12rem;
+    }
+
+    #two .regularFont, #one .regularFont, #about .regularFont{
+        line-height: 10rem;
+    }
+
+    h2, h5.mediumFont{
+        font-size: 10rem;
+    }
+
+    .regularFont,footer small, #footer li a, footer i, header nav.flex li a, form.contact label, form.contact button{
+        font-size: 8rem;
+    }
+
+    #footer li a, footer i{
+        margin-right: 2rem;
+    }
+    
+
+    
+}
+  
