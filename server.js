@@ -37,10 +37,6 @@ app.get('/photos',(request, response)=>{
 response.render('photos.ejs')
 })
 
-app.get('/contact',(request, response)=>{
-response.render('contact.ejs')
-})
-
 app.listen(process.env.PORT || PORT, ()=>{  
     console.log(`Server running on port ${PORT}`)
 })
