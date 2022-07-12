@@ -9,12 +9,27 @@
     <title>Illya Fansite - Gameplay</title>
   </head>
 
-  <body class = 'photos'>
-    <div class= 'flex menu row'><i id = 'menu' class="largeFont fa-solid fa-bars"></i></div>
+  <body class = 'photos' id = 'photos'>
+
+    <div class= 'hidden flex menu row'><i id = 'menu' class="largeFont fa-solid fa-bars"></i></div>
 
     <div class = 'scroll flex hidden'>
+        <ul class = 'flex column'><!--
+        --><i id = 'close' class="largeFont fa-solid fa-xmark"></i><!--
+        --><li><a class = 'regularFont' href = "/"> Home</a></li><!--
+        --><li><a class = 'regularFont' href = "/about">About</a></li><!--
+        --><li><a class = 'regularFont' href = "/gameplay"> Gameplay</a></li><!--
+        --><li><a class = 'regularFont' href = "/photos"> Photos</a></li><!--
+        --></ul>
+      </div>
+
+
+    <div class= 'flex row'><i id = 'bars' class="largeFont fa-solid fa-bars"></i></div>
+
+    <div class = 'flex navbar'>
+    <div class = 'scroll flex hidden'>
         <ul class = 'flex column'>
-            <i id = 'close' class="largeFont fa-solid fa-xmark"></i>
+            <div class = 'close'><i id = 'claws' class="largeFont fa-solid fa-xmark"></i></div>
         <% for(let i=1; i < 19; i++) {%>
       <li class = 'mediumFont'><a href = '#img<%=[i]%>'>Section1-<%=[i]%></a></li>
         <% } %>
@@ -23,10 +38,10 @@
           <% } %>
         </ul>
       </div>
- 
+    </div>
 
     <header>
-        <h1 class = 'flex justifyContent largeFont'><a href = "/">Illya Fansite</a></h1>
+      <a href = "/"><h1 class = 'flex justifyContent largeFont'>Illya Fansite</h1></a>
           <!-- <h3 class = "date">07&ndash;20</h3> -->
           <nav class = 'flex' id = 'nav'>
             <ul class = 'flex'><!--
@@ -40,10 +55,10 @@
   
   </header>
 <body class = 'photos'>
+  <h2 class = 'mediumFont flex justifyContent'>Click To View Full Image!</h2>
 
     <section class ='flex alignItems column illya'>
 
-        <h2 class = 'mediumFont'>Click To View Full Image!</h2>
         <% let index = 0; %> 
 
         <% for(let i=1; i < 19; i++) {%>
@@ -94,7 +109,7 @@
 
 <footer class = 'flex' id = 'footer'>
     <small class = 'flex justifyContent alignItems'>Illya Fansite &copy; choir</small>
-    <ul class = 'flex'>
+    <ul class = 'flex icons'>
       <li><a href = 'https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248'><i class="fa-brands fa-facebook-f"></i></a></li>
       <li><a href = 'https://www.linkedin.com/in/richard-choir/'><i class="fa-brands fa-linkedin"></i></a></li>
       <li><a href = 'https://www.instagram.com/225kh_drw/?hl=en'><i class="fa-brands fa-instagram"></i></a></li>
@@ -111,6 +126,6 @@
   </nav>
   </footer>
   <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
-  <script src="/photos.js"></script>
+  <script src="/main.js"></script>
   </body>
 </html>

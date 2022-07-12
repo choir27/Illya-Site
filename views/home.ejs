@@ -11,9 +11,21 @@
 
 
   <body class = 'home'>
+   
+    <div class= 'flex menu row'><i id = 'menu' class="largeFont fa-solid fa-bars"></i></div>
+
+    <div class = 'scroll flex hidden'>
+        <ul class = 'flex column'><!--
+        --><i id = 'close' class="largeFont fa-solid fa-xmark"></i><!--
+        --><li><a class = 'regularFont' href = "/"> Home</a></li><!--
+        --><li><a class = 'regularFont' href = "/about">About</a></li><!--
+        --><li><a class = 'regularFont' href = "/gameplay"> Gameplay</a></li><!--
+        --><li><a class = 'regularFont' href = "/photos"> Photos</a></li><!--
+        --></ul>
+      </div>
 
     <header>
-      <h1 class = 'flex justifyContent largeFont'><a href = "/">Illya Fansite</a></h1>
+      <a href = "/"><h1 class = 'flex justifyContent largeFont'>Illya Fansite</h1></a>
         <!-- <h3 class = "date">07&ndash;20</h3> -->
         <nav class = 'flex' id = 'nav'>
           <ul class = 'flex'><!--
@@ -39,21 +51,21 @@
 <section id = 'two' class = 'flex column alignItems'><!--
 --><div class = 'flex row'>
 <section class = "flex column alignItems justifyContent">
-  <h5 class = 'mediumFont'>Drawings</h5>
-  <a href = "/drawings" class = 'flex alignItems column'>
+<h5 class = 'mediumFont'>Drawings</h5>
+<a href = "/drawings" class = 'flex alignItems column'>
      <img src="/home/Heaven Fanart.jpg" alt='Drawing'/>
      <h3 class = 'button flex regularFont'>Beautiful Fanart</h3>
 </a>
-<p class ='regularFont'>Unofficial artwork created by fans of Illya, with various outfits and art styles!</p>
+<p class ='regularFont'>Artwork created by fans of Illya, with various outfits and art styles!</p>
 </section><!--
 
 --><section class = "flex column alignItems justifyContent">
-<h5 class = 'mediumFont'>FGO Gameplay</h5>
+<h5 class = 'mediumFont'>Gameplay</h5>
 <a href = "/gameplay" class = 'flex alignItems column'>
 <img src = "/home/Gameplay.PNG" alt = "Summon" class = 'summon'>
 <h3 class = 'button flex regularFont'>Play as Illya!</h3>
 </a>
-<p class ='regularFont'>Videos and explanations of how Illya plays in the mobile game Fate Grand Order.</p>
+<p class ='regularFont'>Videos and explanations of Illya's gameplay in the mobile game FGO.</p>
 </section><!--
 
 --><section class = "flex column alignItems justifyContent">
@@ -66,6 +78,8 @@
 </section><!--
 --></div><!--
 --></section>
+
+
 
 <form name = 'Illya Contact' netlify method="post" action="#" netlify-honeypot="bot-field" data-netlify="true" class = 'flex column alignItems contact'>
   <p class="hidden">
@@ -82,7 +96,7 @@
 
 <footer class = 'flex' id = 'footer'>
   <small class = 'flex justifyContent alignItems'>Illya Fansite &copy; choir</small>
-  <ul class = 'flex'>
+  <ul class = 'flex icons'>
     <li><a href = 'https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248'><i class="fa-brands fa-facebook-f"></i></a></li>
     <li><a href = 'https://www.linkedin.com/in/richard-choir/'><i class="fa-brands fa-linkedin"></i></a></li>
     <li><a href = 'https://www.instagram.com/225kh_drw/?hl=en'><i class="fa-brands fa-instagram"></i></a></li>
@@ -99,6 +113,6 @@
 </footer>
 
 <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
-
+<script src = '/main.js'></script>
   </body>
 </html>

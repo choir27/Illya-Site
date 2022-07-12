@@ -11,3 +11,7 @@ function closeNav(){
     document.querySelector('.scroll').classList.add('hidden')
     document.querySelector('#menu').classList.remove('hidden')
  }
+
+
+//  document.querySelector('#bars').addEventListener('click',showNav)
+//  document.querySelector('#claws').addEventListener('click',closeNav)

@@ -10,8 +10,23 @@
   </head>
 
   <body>
+
+    <div class= 'flex menu row'><i id = 'menu' class="largeFont fa-solid fa-bars"></i></div>
+
+    <div class = 'scroll flex hidden'>
+        <ul class = 'flex column'><!--
+        --><i id = 'close' class="largeFont fa-solid fa-xmark"></i><!--
+        --><li><a class = 'regularFont' href = "/"> Home</a></li><!--
+        --><li><a class = 'regularFont' href = "/about">About</a></li><!--
+        --><li><a class = 'regularFont' href = "/gameplay"> Gameplay</a></li><!--
+        --><li><a class = 'regularFont' href = "/photos"> Photos</a></li><!--
+        --></ul>
+      </div>
+
+
+
     <header>
-        <h1 class = 'flex justifyContent largeFont'><a href = "/">Illya Fansite</a></h1>
+      <a href = "/"><h1 class = 'flex justifyContent largeFont'>Illya Fansite</h1></a>
           <!-- <h3 class = "date">07&ndash;20</h3> -->
           <nav class = 'flex' id = 'nav'>
             <ul class = 'flex'><!--
@@ -28,6 +43,9 @@
 
 <section class = 'flex column alignItems gameplay'>
   <h3 class = 'mediumFont'>Illya Caster Gameplay</h3>
+
+
+
   <div class = 'flex justifyContent'>
     <img src ='/gameplay/S136_Stage2.png' alt = 'illya caster ascension stage 2' class = 'image'>
     <ul class = 'flex'>
@@ -50,7 +68,9 @@
       </div>
     </ul>
   </div>
-    <div class = 'flex justifyContent alignItems'>
+  
+
+    <div class = 'flex justifyContent alignItems video'>
 <a target = '_blank' href = 'https://www.youtube.com/watch?v=t1OS37GPmF8' class = 'flex justifyContent alignItems'>
   <button class = 'btn mediumFont'>Play</button>
 <img src = '/gameplay/IllyaVideo.PNG' alt = 'illya caster gameplay' class = 'video'>
@@ -61,6 +81,8 @@
 --><section class = 'flex column alignItems gameplay-reverse'>
   <h3 class = 'mediumFont'>Illya as Sitonai Alter Ego</h3>
   <div class = 'flex justifyContent'>
+    <img src = '/gameplay/S224_Stage1.png' alt  = 'sitonai stage ascension 1' class = 'image'>
+
 <ul class = 'flex'>
   <div class ='container'>
   <li>Min Attack Stat: 1,803</li>
@@ -80,10 +102,9 @@
   <li>Death Rate: 25%</li>
   </div>
 </ul>
-<img src = '/gameplay/S224_Stage1.png' alt  = 'sitonai stage ascension 1' class = 'image'>
 
 </div>
-<div class = 'flex justifyContent alignItems'>
+<div class = 'flex justifyContent alignItems video'>
 <a target = '_blank' href = 'https://www.youtube.com/watch?v=pAojz0MNlp8' class = 'flex justifyContent alignItems'>
   <button class = 'btn mediumFont'>Play</button>
     <img src = "/gameplay/Sitonai Video.PNG" alt = 'sitonai alterego gameplay' class = 'video'>
@@ -115,7 +136,7 @@
   </div>
 </ul>
 </div>
-<div class = 'flex justifyContent alignItems'>
+<div class = 'flex justifyContent alignItems video'>
 <a target = '_blank' href = "https://www.youtube.com/watch?v=r8Ajm0IpXmA" type="video/mp4" class = 'flex justifyContent alignItems'>
   <button class = 'btn mediumFont'>Play</button>
     <img src = '/gameplay/Illya Archer Video.PNG' alt = 'illya Archer Gameplay' class = 'video'>
@@ -140,7 +161,7 @@
 
 <footer class = 'flex' id = 'footer'>
   <small class = 'flex justifyContent alignItems'>Illya Fansite &copy; choir</small>
-  <ul class = 'flex'>
+  <ul class = 'flex icons'>
     <li><a href = 'https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248'><i class="fa-brands fa-facebook-f"></i></a></li>
     <li><a href = 'https://www.linkedin.com/in/richard-choir/'><i class="fa-brands fa-linkedin"></i></a></li>
     <li><a href = 'https://www.instagram.com/225kh_drw/?hl=en'><i class="fa-brands fa-instagram"></i></a></li>
@@ -157,7 +178,7 @@
 </nav>
 </footer>
 <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
-<script src = '/gameplay.js'></script>
+<script src = '/main.js'></script>
 
   </body>
 </html>

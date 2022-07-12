@@ -9,8 +9,23 @@
     <title>Illya Fansite - About</title>
 </head>
   <body class = 'about'>
+
+    <div class= 'flex menu row'><i id = 'menu' class="largeFont fa-solid fa-bars"></i></div>
+
+    <div class = 'scroll flex hidden'>
+        <ul class = 'flex column'><!--
+        --><i id = 'close' class="largeFont fa-solid fa-xmark"></i><!--
+        --><li><a class = 'regularFont' href = "/"> Home</a></li><!--
+        --><li><a class = 'regularFont' href = "/about">About</a></li><!--
+        --><li><a class = 'regularFont' href = "/gameplay"> Gameplay</a></li><!--
+        --><li><a class = 'regularFont' href = "/photos"> Photos</a></li><!--
+        --></ul>
+      </div>
+
+
+
     <header>
-        <h1 class = 'flex justifyContent largeFont'><a href = "/">Illya Fansite</a></h1>
+      <a href = "/">  <h1 class = 'flex justifyContent largeFont'>Illya Fansite</h1></a>
           <!-- <h3 class = "date">07&ndash;20</h3> -->
           <nav class = 'flex' id = 'nav'>
             <ul class = 'flex'><!--
@@ -142,7 +157,7 @@
   
   <footer class = 'flex' id = 'footer'>
     <small class = 'flex justifyContent alignItems'>Illya Fansite &copy; choir</small>
-    <ul class = 'flex'>
+    <ul class = 'flex icons'>
       <li><a href = 'https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248'><i class="fa-brands fa-facebook-f"></i></a></li>
       <li><a href = 'https://www.linkedin.com/in/richard-choir/'><i class="fa-brands fa-linkedin"></i></a></li>
       <li><a href = 'https://www.instagram.com/225kh_drw/?hl=en'><i class="fa-brands fa-instagram"></i></a></li>
@@ -159,6 +174,6 @@
   </nav>
   </footer>
   <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
-
+  <script src = '/main.js'></script>
   </body>
 </html>
