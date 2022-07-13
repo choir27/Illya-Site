@@ -495,6 +495,9 @@ cursor: pointer;
     justify-content: flex-end;
 }
 
+#claws:hover{
+    color: black;
+}
 
 .navbar{
     justify-content: flex-end;
@@ -612,16 +615,23 @@ form.contact{
     padding: 3rem;
 }
 
-.menu #menu, .menu{
-    color: white;
-    z-index: 1;
+#fgo .menu #menu, #fgo .menu, .scroll{
     position: fixed;
+    z-index: 1;
 }
 
-body#fgo #gameplay div.flex.justifyContent img.image{
+.menu{
+    position: fixed;
+    color: white;
+}
+
+
+#fgo #gameplay .image, #fgo #gameplay .video{
     z-index: 0;
     position: relative;
 }
+
+
 
 
 /* Zoom out
@@ -855,9 +865,10 @@ padding-top: -18rem;
         display: none;
     }
 
-    .menu{
+    #menu, .menu{
         display: flex;
     }
+
   
 }
 

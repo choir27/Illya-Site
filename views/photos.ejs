@@ -11,23 +11,24 @@
 
   <body class = 'photos' id = 'photos'>
 
-   <!-- <div class= 'hidden flex menu row'><i id = 'menu' class="largeFont fa-solid fa-bars"></i></div>
+    <div class= 'menu row hidden'><i id = 'menu' class="hidden largeFont fa-solid fa-bars"></i></div>
 
-    <div class = 'scroll flex hidden'>
-        <ul class = 'flex column'>
+    <div class = 'scroll flex hidden' id = 'navBar'>
+        <ul class = 'column flex list'>
         <i id = 'close' class="largeFont fa-solid fa-xmark"></i>
         <li><a class = 'regularFont' href = "/"> Home</a></li>
         <li><a class = 'regularFont' href = "/about">About</a></li>
         <li><a class = 'regularFont' href = "/gameplay"> Gameplay</a></li>
         <li><a class = 'regularFont' href = "/photos"> Photos</a></li>
         </ul>
-      </div>-->
+      </div>
+    
 
 
     <div class= 'flex row' id = 'ruby'><img src = '/home/Nav Icon.png' class = 'ruby'></div>
 
     <div class = 'flex navbar'>
-    <div class = 'scroll flex hidden'>
+    <div class = 'scroll flex hidden' id = 'scroll'>
         <ul class = 'flex column'>
             <div class = 'close'><i id = 'claws' class="largeFont fa-solid fa-xmark"></i></div>
         <% for(let i=1; i < 19; i++) {%>
@@ -126,6 +127,6 @@
   </nav>
   </footer>
   <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
-  <script src="/main.js"></script>
+  <script src="/photos.js"></script>
   </body>
 </html>
