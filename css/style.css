@@ -387,6 +387,8 @@ footer i{
     background: no-repeat url('assets/gameplay/blue-flower-reverse.png') center/cover;
 }
 
+
+
 #gameplay section{
     padding: 4rem;
     width: 100%;
@@ -455,8 +457,8 @@ footer i{
 }
 
 #gameplay li{
-    line-height: 3rem;
-    font-size: 2rem;
+    line-height: 5rem;
+    font-size: 3rem;
 }
 
 /* Photos
@@ -483,10 +485,16 @@ footer i{
     width: 15%;
 }
 
-.menu{
-    padding: 3rem;
-    position: fixed;
+#photos .ruby{
+width: 8%;
+position: fixed;
+cursor: pointer;
 }
+
+#ruby{
+    justify-content: flex-end;
+}
+
 
 .navbar{
     justify-content: flex-end;
@@ -535,7 +543,7 @@ padding: 2rem;
     padding: 2rem;
 }
 
-#menu:hover, #close:hover, .photos .scroll a:hover{
+.menu #menu:hover, #close:hover, .photos .scroll a:hover{
 color: black;
 }
 
@@ -596,6 +604,24 @@ form.contact{
     margin-top: -12rem;
 }
 
+/* Menu
+========================================================================== */
+
+
+.menu{
+    padding: 3rem;
+}
+
+.menu #menu, .menu{
+    color: white;
+    z-index: 1;
+    position: fixed;
+}
+
+body#fgo #gameplay div.flex.justifyContent img.image{
+    z-index: 0;
+    position: relative;
+}
 
 
 /* Zoom out
