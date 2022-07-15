@@ -19,7 +19,12 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+MongoClient.connect(process.env.DATABASE_URL, { useUnifiedTopology: true })
+    .then(client => {
 
+        console.log(`Connected to ${dbName} Database`)
+        db = client.db(dbName)
+    })
 
 app.get('/',(request, response)=>{
     response.render('home.ejs')
@@ -36,6 +41,21 @@ app.get('/about',(request, response)=>{
 app.get('/photos',(request, response)=>{
 response.render('photos.ejs')
 })
+
+app.get('/received',(request, response)=>{
+    response.render('received.ejs')
+})
+
+app.post('/contact', (request,response)=>{
+    db.collection('servants').insertOne({email: request.body.email, message: request.body.message
+    })
+        .then(result => {
+            response.redirect('/received')
+
+        })
+    .catch(error => console.error(error))
+})
+
 
 app.listen(process.env.PORT || PORT, ()=>{  
     console.log(`Server running on port ${PORT}`)

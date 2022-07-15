@@ -631,8 +631,35 @@ form.contact{
     position: relative;
 }
 
+/* Received
+========================================================================== */
 
+.received{
+    height: 100vh;
+    width: 100%;
+    background: #f3c4d0;
+	background: radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+	background: -moz-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+	background: -webkit-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.received i, .received h1{
+    color: white;
+}
+
+.received span{
+    margin-left: 2rem;
+}
+
+.received i{
+    padding: 3rem;
+}
+
+.received i:hover, .received a:hover, .received span:hover{
+    color: black;
+}
 
 /* Zoom out
 ========================================================================== */
