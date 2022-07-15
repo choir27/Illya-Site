@@ -607,6 +607,40 @@ form.contact{
     margin-top: -12rem;
 }
 
+/* Other
+========================================================================== */
+
+
+
+#other #videos, #other img, #other section{
+    width: 100%;   
+}
+
+#other img{
+    width: 20%;
+}
+
+#other a{
+    width: 30%;
+}
+
+#other .prisma img{
+width: 25%;
+}
+
+#other #videos,#other .prisma{
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+
+#other #videos, #other #videos img, #other #videos a{
+    width: 70%;
+}
+
+
+
+
 /* Menu
 ========================================================================== */
 
@@ -661,6 +695,31 @@ form.contact{
     color: black;
 }
 
+/* Arrows
+========================================================================== */
+
+.arrows{
+    width: 100%;
+}
+
+
+
+.arrows div{
+    width: 20%;
+    justify-content: space-around;
+}
+
+.arrows i{
+    color: white;
+}
+
+.arrows i:hover{
+    color: black;
+}
+
+body *{
+    border: 3px solid black;
+}
 /* Zoom out
 ========================================================================== */
 

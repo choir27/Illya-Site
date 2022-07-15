@@ -38,6 +38,10 @@ app.get('/about',(request, response)=>{
     response.render('about.ejs')
 })
 
+app.get('/other',(request, response)=>{
+    response.render('other.ejs')
+})
+
 app.get('/photos',(request, response)=>{
 response.render('photos.ejs')
 })
