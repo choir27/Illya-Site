@@ -861,6 +861,11 @@ padding-top: -18rem;
 
 
 @media all and (min-width: 200px) and (max-width: 740px){
+
+    #fgo #gameplay.flex.column.alignItem section.gameplay div.servant{
+        flex-direction: column;
+    }
+
     header nav#nav{
         display: none;
     }
@@ -868,6 +873,7 @@ padding-top: -18rem;
     #menu, .menu{
         display: flex;
     }
+
 
   
 }
@@ -970,7 +976,7 @@ padding-top: -18rem;
 }
 
 
-@media all and (min-width: 200px) and (max-width: 817px){
+@media all and (min-width: 200px) and (max-width: 750px){
 #gameplay .video{
     display: none;
 }
