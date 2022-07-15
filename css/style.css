@@ -992,36 +992,69 @@ padding-top: -18rem;
     margin-bottom: -17rem;
 }
 
+#gameplay .image{
+    min-width: 50%;
+ }
+ #gameplay li{
+     text-align: center;
+ }
+ .gameplay,.gameplay-reverse{
+     background: none;
+ }
+
+ .illya{
+     background: none;
+ }
+
+ .about, .photos{
+ background: #f3c4d0;
+ background: radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+ background: -moz-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+ background: -webkit-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+ }
+
+ #about h3{
+     text-align: center;
+ }
+ #about{
+     padding: 4rem;
+ }
+
+ #about audio{
+     margin-top: 2rem;
+ }
+
+ #about aside, .illyaFreakOut{
+     margin: 8rem;
+ }
+
 }
 
 
-@media all and (min-width: 200px) and (max-width: 817px){
-    #gameplay .image{
-       min-width: 50%;
-    }
-    #gameplay li{
-        text-align: center;
-    }
-    .gameplay,.gameplay-reverse{
-        background: none;
-    }
+@media all and (min-width: 900px) and (max-width: 1290px){
 
-    .illya{
-        background: none;
-    }
-
-    .about, .photos{
-    background: #f3c4d0;
-	background: radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
-	background: -moz-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
-	background: -webkit-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
-    }
-
-    #about h3{
-        text-align: center;
-    }
+#photos #ruby img{
+    min-width: 10%;
+}
 
 }
+
+
+@media all and (min-width: 515px) and (max-width: 900px){
+#photos #ruby img{
+    min-width: 15%;
+}
+
+}
+
+
+@media all and (min-width: 315px) and (max-width: 515px){
+    #photos #ruby img{
+        min-width: 20%;
+    }
+    
+    }
+    
 
 @media all and (min-width: 200px) and (max-width: 558px){
     #gameplay .image{
@@ -1043,6 +1076,49 @@ padding-top: -18rem;
 }
 
 @media all and (min-width: 200px) and (max-width: 474px){
+    .home{
+        background: #f3c4d0;
+        background: radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+        background: -moz-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+        background: -webkit-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);    
+    }
+
+    .photos header{  
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #photos h2{
+        text-align: center;
+    }
+
+    #photos .illya a,#photos .illya a img{
+        width: 100%;
+    }
+
+    #photos .illya a img{
+        padding: 0 .5rem;
+    }
+
+ 
+    #about section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header a{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .home #one p{
+        width: 90%;
+    }
+
     #gameplay .image{
        min-width: 70%;
     }
@@ -1057,7 +1133,9 @@ padding-top: -18rem;
     #fgo #gameplay form.contact, #gameplay .gameplay, #gameplay .gameplay-reverse{
         background: none;
     }
-
+    #ruby{
+        display: none;
+    }
 }
 
 
