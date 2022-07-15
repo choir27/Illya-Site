@@ -911,3 +911,166 @@ padding-top: -18rem;
 
 
 }
+
+
+@media all and (min-width: 978px) and (max-width: 1290px){
+    .container{
+        display: none;
+    }
+
+    #container1, #container3, #container5{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #gameplay .image{
+        width: 40%;
+    }
+
+    #gameplay .sitonai{
+        width: 40%;
+    }
+
+    #gameplay .gameplay-reverse div{
+        width: 100%;
+    }
+
+}
+
+
+@media all and (min-width: 200px) and (max-width: 978px){
+    .container{
+        display: none;
+    }
+
+    #container1, #container3, #container5{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fgo #gameplay .servant{
+     padding-bottom: 22rem;
+    }
+
+    .servant .image{
+        width: 40%;
+    }
+
+    .servant .sitonai{
+        width: 70%;
+    }
+
+    #fgo #gameplay h3.mediumFont{
+        margin-bottom: 13rem;
+    }
+    #gameplay li{
+        text-align: center;
+    }
+   
+}
+
+
+@media all and (min-width: 200px) and (max-width: 817px){
+#gameplay .video{
+    display: none;
+}
+#gameplay .container, #gameplay ul{
+    height: 2vh;
+    margin-bottom: -32rem;
+}
+
+#gameplay .image{
+    margin-top: -52rem;
+}
+
+#fgo #gameplay h3.mediumFont{
+    margin-bottom: -52rem;
+}
+
+#fgo #gameplay .gameplay, #fgo #gameplay .gameplay-reverse{
+    margin-top: -32rem;
+    margin-bottom: -17rem;
+}
+
+}
+
+
+@media all and (min-width: 200px) and (max-width: 817px){
+    #gameplay .image{
+       min-width: 50%;
+    }
+    #gameplay li{
+        text-align: center;
+    }
+    .gameplay,.gameplay-reverse{
+        background: none;
+    }
+
+    .illya{
+        background: none;
+    }
+
+    .about, .photos{
+    background: #f3c4d0;
+	background: radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+	background: -moz-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+	background: -webkit-radial-gradient(#f3c4d0,#f2bcc9,	#e26c88, #22060d);
+    }
+
+    #about h3{
+        text-align: center;
+    }
+
+}
+
+@media all and (min-width: 200px) and (max-width: 558px){
+    #gameplay .image{
+       min-width: 60%;
+    }
+    #gameplay li{
+        text-align: center;
+    }
+    #gameplay h3{
+        text-align: center;
+    }
+   
+    #fgo #gameplay form.contact, #gameplay .gameplay, #gameplay .gameplay-reverse{
+        background: none;
+    }
+
+
+
+}
+
+@media all and (min-width: 200px) and (max-width: 474px){
+    #gameplay .image{
+       min-width: 70%;
+    }
+
+    #gameplay li{
+        text-align: center;
+    }
+    #gameplay h3{
+        text-align: center;
+    }
+       
+    #fgo #gameplay form.contact, #gameplay .gameplay, #gameplay .gameplay-reverse{
+        background: none;
+    }
+
+}
+
+
+@media all and (min-width: 200px) and (max-width: 440px){
+    #gameplay .image{
+       min-width: 70%;
+    }
+    #gameplay li{
+        text-align: center;
+    }
+
+    #gameplay h3{
+        text-align: center;
+    }
+
+}
