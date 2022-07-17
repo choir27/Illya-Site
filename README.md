@@ -1,7 +1,6 @@
 # Illya-Site
 
-<!--Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).--> 
-
+A site highlighting different aspects of the fictional japanese animated character Illyasviel Von Einzbern, ranging from her gameplay, biography, photos and other media.
 
 <div align = 'center'><a href = 'https://illyasite.herokuapp.com/'>View the website here!</a></div>
 </br>
@@ -9,7 +8,10 @@
 
 ## How It's Made: Tech used: HTML, CSS, JavaScript, Express, Node and EJS
 
-<!--Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write something. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
- ## Optimizations (optional) You don't have to include this section but interviewers love that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are GREAT to bring up in interviews and you can use this section as reference when studying for technical interviews! 
-## Lessons Learned: No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those whoa this is awesome or fuck yeah I did it! moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing. 
-## Examples: Take a look at these couple examples that I have in my own portfolio: Palettable: YOUR LINK HERE Twitter Battle: YOUR LINK HERE Patch Panel: YOUR LINK HERE-->
+I built the character's status information using the public Fate Grand Order API database.  Using ejs with javascript, I used loops to automatically display all the html for the gameplay web page and the photo web page.  Utilizing Node.js and the framework Express, I built the backend code to host the server for the website and send input submissions to the respective MongoDB database.  For the hamburger menu and the ruby menu, I used javascript logic to make them function the intended way, as well as the carousel in other web page.
+
+## Lessons Learned:
+
+Using Media Queries, I was able to enable zooming in and out to make the website function properly without letting the website layout and content break, while also making the text more readable and the images look more visible.
+
+## Examples: Take a look at these couple examples that I have in my own portfolio: Poke Site: https://po-kemon.netlify.app/ The Real Estate Beast: https://therealestatebeast.netlify.app/ Yu-gi-oh Panel: yu-gi-oh-panel.netlify.app
