@@ -720,6 +720,9 @@ width: 25%;
 /* Zoom out
 ========================================================================== */
 
+#footer .icons{
+    margin-right: 20rem;
+}
 
 @media all and (min-width: 3500px) and (max-width: 6200px){
 
