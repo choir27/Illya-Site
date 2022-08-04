@@ -14,4 +14,5 @@ I built the character's status information using the public Fate Grand Order API
 
 Using Media Queries, I was able to enable zooming in and out to make the website function properly without letting the website layout and content break, while also making the text more readable and the images look more visible.
 
-## Examples: Take a look at these couple examples that I have in my own portfolio: Poke Site: https://po-kemon.netlify.app/ The Real Estate Beast: https://therealestatebeast.netlify.app/ Yu-gi-oh Panel: yu-gi-oh-panel.netlify.app
+## Examples: 
+Take a look at these couple examples that I have in my own portfolio: Poke Site: https://po-kemon.netlify.app/ The Real Estate Beast: https://therealestatebeast.netlify.app/ Yu-gi-oh Panel: yu-gi-oh-panel.netlify.app
