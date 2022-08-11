@@ -39,25 +39,96 @@
   
   </header>
 
+
+<% function Servant(name,originalName,className,gender,maxAttack,hpMax,lvMax) { %>
+    <% this.name = name %>
+    <% this.originalName = originalName %>
+    <% this.className = className %>
+    <% this.gender = gender %>
+    <% this.maxAttack = maxAttack %>
+    <% this.hpMax = hpMax %>
+    <% this.lvMax = lvMax %>
+<% } %>
+
+<% function Servant1(id,cost,cards,noblePhantasm,starAbsorb,starGen,instantDeathChance) { %>
+    <% this.id = id %>
+    <% this.cost = cost %>
+    <% this.cards = cards %>
+    <% this.noblePhantasm = noblePhantasm %>
+    <% this.starAbsorb = starAbsorb %>
+    <% this.starGen = starGen %>
+    <% this.instantDeathChance = instantDeathChance %>
+<% } %>
+
+<% let illyaArcher = new Servant(data[83].name,data[83].originalName,data[83].className,data[83].gender,data[83].atkMax,data[83].hpMax,data[83].lvMax) %>
+<% let illyaArcher2 = new Servant1 (data[83].id,data[83].cost,data[83].cards,data[83].noblePhantasms[0].name,data[83].starAbsorb,data[83].starGen,data[82].instantDeathChance) %>
+
+<% let illyaCaster = new Servant(data[197].name,data[197].originalName,data[197].className,data[197].gender,data[197].atkMax,data[197].hpMax,data[197].lvMax) %>
+<% let illyaCaster2 = new Servant1 (data[197].id,data[197].cost,data[197].cards,data[197].noblePhantasms[0].name,data[197].starAbsorb,data[197].starGen,data[197].instantDeathChance) %>
+
+<% let sitonai = new Servant(data[311].name,data[311].originalName,data[311].className,data[311].gender,data[311].atkMax,data[311].hpMax,data[311].lvMax) %>
+<% let sitonai2 = new Servant1(data[311].id,data[311].cost,data[311].cards,data[311].noblePhantasms[0].name,data[311].starAbsorb,data[311].starGen,data[311].instantDeathChance) %>
+
+<% function addSpace(title){ %>
+  <% return title.split('').map(function findUpper(ele,i){ %>
+    <% if(ele===ele.toUpperCase() && i !== 0){ %>
+      <% return ' ' + ele %>
+    <% } %>
+    <% if(ele){ %>
+      <% return ele %>
+    <% } %>
+<% }).join('') %>
+<% } %>
+
+
   <section id = 'gameplay' class = "flex column alignItem">
 
 <section class = 'flex column alignItems gameplay'>
   <h3 class = 'mediumFont'>Illya Caster Gameplay</h3>
 
-
-
   <div class = 'flex justifyContent servant'>
     <img src ="https://gamepress.gg/grandorder/sites/grandorder/files/2018-04/1362.jpg" alt = 'illya caster ascension stage 2' class = 'image'>
     <ul class = 'flex'>
       <div class = 'container' id = 'container1'>
+        <% for(let keys in illyaCaster){ %>
+              
+         <% let title = keys[0].toUpperCase()+keys.slice(1,keys.length) %>
+         <% if(typeof illyaCaster[keys] !== 'string'){ %>
+            <li><%= addSpace(title) %> : <%= illyaCaster[keys] %></li>
+         <% } %>
+    
+         <% if(typeof illyaCaster[keys] === 'string'){ %>
+          <% let name = illyaCaster[keys].split(' ').map(keys=>{ %>
+            <% return keys[0].toUpperCase()+keys.slice(1,keys.length)}).join(' ') %>
+          <li>  <%=  addSpace(title) %> :  <%= name %> </li>
+                <% } %>
+      <% } %>
 
       </div>
       <div class = 'container' id = 'container2'>
-  
+        <% for(let keys in illyaCaster2){ %>
+              
+          <% let title = keys[0].toUpperCase()+keys.slice(1,keys.length) %>
+          <% if(typeof illyaCaster2[keys] !== 'string' && keys!== 'cards'){ %>
+             <li><%= addSpace(title) %> : <%= illyaCaster2[keys] %></li>
+          <% } %>
+     
+          <% if(typeof illyaCaster2[keys] === 'string' && keys !== 'cards'){ %>
+           <% let name = illyaCaster2[keys].split(' ').map(keys=>{ %>
+             <% return keys[0].toUpperCase()+keys.slice(1,keys.length)}).join(' ') %>
+           <li>  <%=  addSpace(title) %> :  <%= name %> </li>
+            <% } %>
+
+         <% if(keys === 'cards'){ %>
+           <% let cards  = illyaCaster2['cards'].map(keys=>{return keys[0].toUpperCase() + keys.slice(1,keys.length)}).join(' ') %>
+           <li>  <%=  addSpace(title) %> :  <%= cards %> </li>
+                 <% } %>
+          
+       <% } %>
       </div>
     </ul>
   </div>
-  
+
 
     <div class = 'flex justifyContent alignItems video'>
 <a target = '_blank' href = 'https://www.youtube.com/watch?v=t1OS37GPmF8' class = 'flex justifyContent alignItems'>
@@ -74,10 +145,40 @@
 
 <ul class = 'flex'>
   <div class ='container' id = 'container3'>
-
+    <% for(let keys in sitonai){ %>
+              
+      <% let title = keys[0].toUpperCase()+keys.slice(1,keys.length) %>
+      <% if(typeof sitonai[keys] !== 'string'){ %>
+         <li><%= addSpace(title) %> : <%= sitonai[keys] %></li>
+      <% } %>
+ 
+      <% if(typeof sitonai[keys] === 'string'){ %>
+       <% let name = sitonai[keys].split(' ').map(keys=>{ %>
+         <% return keys[0].toUpperCase()+keys.slice(1,keys.length)}).join(' ') %>
+       <li>  <%=  addSpace(title) %> :  <%= name %> </li>
+             <% } %>
+   <% } %>
   </div>
   <div class = 'container' id = 'container4'>
+    <% for(let keys in sitonai2){ %>
+              
+      <% let title = keys[0].toUpperCase()+keys.slice(1,keys.length) %>
+      <% if(typeof sitonai2[keys] !== 'string' && keys!== 'cards'){ %>
+         <li><%= addSpace(title) %> : <%= sitonai2[keys] %></li>
+      <% } %>
+ 
+      <% if(typeof sitonai2[keys] === 'string' && keys !== 'cards'){ %>
+       <% let name = sitonai2[keys].split(' ').map(keys=>{ %>
+         <% return keys[0].toUpperCase()+keys.slice(1,keys.length)}).join(' ') %>
+       <li>  <%=  addSpace(title) %> :  <%= name %> </li>
+        <% } %>
 
+     <% if(keys === 'cards'){ %>
+       <% let cards  = sitonai2['cards'].map(keys=>{return keys[0].toUpperCase() + keys.slice(1,keys.length)}).join(' ') %>
+       <li>  <%=  addSpace(title) %> :  <%= cards %> </li>
+             <% } %>
+      
+   <% } %>
   </div>
 </ul>
 
@@ -96,10 +197,40 @@
 <img src ='https://gamepress.gg/grandorder/sites/grandorder/files/2020-08/Illyasviel%20von%20Einzbern%20%28Archer%29_2.png' alt = 'illya archer ascension stage' class = 'image'>
 <ul class = 'flex'>
   <div class = 'container' id = 'container5'>
-
+    <% for(let keys in illyaArcher){ %>
+              
+      <% let title = keys[0].toUpperCase()+keys.slice(1,keys.length) %>
+      <% if(typeof illyaArcher[keys] !== 'string'){ %>
+         <li><%= addSpace(title) %> : <%= illyaArcher[keys] %></li>
+      <% } %>
+ 
+      <% if(typeof illyaArcher[keys] === 'string'){ %>
+       <% let name = illyaArcher[keys].split(' ').map(keys=>{ %>
+         <% return keys[0].toUpperCase()+keys.slice(1,keys.length)}).join(' ') %>
+       <li>  <%=  addSpace(title) %> :  <%= name %> </li>
+             <% } %>
+   <% } %>
   </div>
   <div class = 'container' id = 'container6'>
+    <% for(let keys in illyaCaster2){ %>
+              
+      <% let title = keys[0].toUpperCase()+keys.slice(1,keys.length) %>
+      <% if(typeof illyaArcher2[keys] !== 'string' && keys!== 'cards'){ %>
+         <li><%= addSpace(title) %> : <%= illyaArcher2[keys] %></li>
+      <% } %>
+ 
+      <% if(typeof illyaArcher2[keys] === 'string' && keys !== 'cards'){ %>
+       <% let name = illyaArcher2[keys].split(' ').map(keys=>{ %>
+         <% return keys[0].toUpperCase()+keys.slice(1,keys.length)}).join(' ') %>
+       <li>  <%=  addSpace(title) %> :  <%= name %> </li>
+        <% } %>
 
+     <% if(keys === 'cards'){ %>
+       <% let cards  = illyaArcher2['cards'].map(keys=>{return keys[0].toUpperCase() + keys.slice(1,keys.length)}).join(' ') %>
+       <li>  <%=  addSpace(title) %> :  <%= cards %> </li>
+             <% } %>
+      
+   <% } %>
   </div>
 </ul>
 </div>
@@ -141,7 +272,7 @@
 </nav>
 </footer>
 <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
-<script src = '/gameplay.js'></script>
+<script src = '/main.js'></script>
 
   </body>
 </html>

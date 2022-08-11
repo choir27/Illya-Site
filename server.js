@@ -5,6 +5,10 @@ const PORT = 9000
 const cors = require('cors')
 const fs = require('fs')
 require('dotenv').config()
+const fetch = (...args) =>
+	import('node-fetch').then(({default: fetch}) => fetch(...args));
+
+
 
 let db = 'illyaContact'
 let dbName = 'illyaContact'
@@ -30,9 +34,14 @@ app.get('/',(request, response)=>{
     response.render('home.ejs')
 })
 
-app.get('/gameplay',(request, response)=>{
-    response.render('gameplay.ejs')
+app.get('/gameplay',async(request, response)=>{
+    fetch('https://api.atlasacademy.io/export/JP/nice_servant_lore_lang_en.json')
+        .then(res=>res.json())
+        .then(data=>{
+            response.render('gameplay.ejs',{data})
+        })
 })
+
 
 app.get('/about',(request, response)=>{
     response.render('about.ejs')
