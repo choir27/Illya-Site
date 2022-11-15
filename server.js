@@ -70,6 +70,6 @@ app.post('/contact', (request,response)=>{
 })
 
 
-app.listen(process.env.PORT || PORT, ()=>{  
+app.listen(process.env.PORT, ()=>{  
     console.log(`Server running on port ${PORT}`)
 })
