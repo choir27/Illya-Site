@@ -7,14 +7,6 @@ const fs = require('fs')
 require('dotenv').config()
 const fetch = (...args) =>
 	import('node-fetch').then(({default: fetch}) => fetch(...args));
-
-const next = require('next')
-const http = require('http')
-    
-const server = http.createServer((req, res) => {
-    res.removeHeader('Transfer-Encoding');
-    handle(req,res)
-  });
   
 
 let db = 'illyaContact'
@@ -77,11 +69,6 @@ app.post('/contact', (request,response)=>{
 })
 
 
-<<<<<<< HEAD
-server.listen(process.env.PORT || PORT, ()=>{  
-    console.log(`Server running on port ${PORT}`)
-=======
 app.listen(process.env.PORT, ()=>{  
     console.log(`Server running on port`)
->>>>>>> ffeabb70ff88fe13a95d051eb75e18e5b1e8ff0b
 })
