@@ -8,7 +8,14 @@ require('dotenv').config()
 const fetch = (...args) =>
 	import('node-fetch').then(({default: fetch}) => fetch(...args));
 
-
+const next = require('next')
+const http = require('http')
+    
+const server = http.createServer((req, res) => {
+    res.removeHeader('Transfer-Encoding');
+    handle(req,res)
+  });
+  
 
 let db = 'illyaContact'
 let dbName = 'illyaContact'
@@ -70,6 +77,6 @@ app.post('/contact', (request,response)=>{
 })
 
 
-app.listen(process.env.PORT || PORT, ()=>{  
+server.listen(process.env.PORT || PORT, ()=>{  
     console.log(`Server running on port ${PORT}`)
 })
