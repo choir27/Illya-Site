@@ -77,6 +77,4 @@ app.post('/contact', (request,response)=>{
 })
 
 
-server.listen(process.env.PORT || PORT, ()=>{  
-    console.log(`Server running on port ${PORT}`)
-})
+server.listen(process.env.PORT || 3000);
